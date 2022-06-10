@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link href="/dist/output.css" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script type="module" src="./app.js"></script>
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body class="text-lg bg-neutral3 grid place-items-center min-h-screen p-4 text-neutral1">
+
+  <main class="max-w-sm grid gap-4">
+  <div class="bg-accent1 p-4 rounded-lg flex space-x-8 justify-between items-center shadow-md shadow-accent1/40">
+    <div class="grid gap-2">
+      <h2 class="text-neutral4">My balance</h2>
+      <p  class="text-neutral4 text-2xl font-bold">$921.48</p>
+    </div>
+     <svg width="72" height="48" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#382314" cx="48" cy="24" r="24"/><circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23"/></g></svg>
+  </div>
+  <div class="bg-neutral4 p-4 rounded-lg grid gap-6 shadow-lg shadow-neutral2/40">
+    <h1 class="text-2xl font-bold">Spending - Last 7 days</h1>
+    <div class="flex justify-between gap-3 mt-10 items-end" id="chart">
+    </div>
+    <div class="h-[2px] w-full bg-neutral3"></div>
+    <div class="flex space-x-8 justify-between items-end">
+      <div class="grid gap-2">
+        <h2 class="text-neutral2">Total this month</h2>
+        <p  class="text-3xl font-bold">$478.33</p>
+      </div>
+      <div class="grid text-right">
+        <h2 class="text-xl font-bold">  +2.4%</h2>
+        <p  class="text-neutral2">from last month</p>
+      </div>
+    </div>
+  </div>
+  </main>
+
+  <!-- TODO: animate bar chart -->
+  <!-- TODO: figure out showing labels only on mobile -->
+  <!-- TODO: numbers count up from zero | animate the total this month amount (@jfhandfield) -->
+</body>
+</html>
